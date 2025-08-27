@@ -70,4 +70,5 @@ func main() {
 	}
 
 	fmt.Println(a.GetBalance()) // 10
+	fmt.Println(a.GetBalance())
 }

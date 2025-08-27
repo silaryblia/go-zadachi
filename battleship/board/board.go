@@ -84,7 +84,7 @@ func (b *Board) PlaceShipsRandomly(size int) bool {
 				cell.HasShip = true
 				ship.Cells = append(ship.Cells, cell)
 			}
-			b.Ships = append(b.Ships, &ship)
+			b.Ships = append(b.Ships, ship)
 			return true
 		}
 	}

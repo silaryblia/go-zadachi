@@ -46,7 +46,7 @@ func (p *Player) TakeMove(x int, y int) (hit bool, sunk bool, message string) {
 				sunk = true
 				return true, true, "Потопили ваш корабль!"
 			}
-			return true, false, "Попали в ваш кораль!"
+			return true, false, "Попали в ваш корабль!"
 		}
 	}
 	return false, false, "Промахнулись!"
@@ -56,7 +56,7 @@ func (p *Player) TakeMove(x int, y int) (hit bool, sunk bool, message string) {
 func NewPlayer(name string) *Player {
 	return &Player{
 		Name:  name,
-		Board: *Board.NewBoard(),
+		Board: NewBoard(),
 	}
 }
 
